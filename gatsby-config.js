@@ -52,12 +52,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        url: `https://postyoulike.com/zetagroupapi/graphql`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     url: `https://postyoulike.com/zetagroupapi/graphql`,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`
   ],
 }
