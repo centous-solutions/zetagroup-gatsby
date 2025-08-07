@@ -24,7 +24,20 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+          quality: 70,
+        },
+        failOnError: false, // prevents build from failing on corrupt images
+        stripMetadata: true,
+        useMozJpeg: false,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
