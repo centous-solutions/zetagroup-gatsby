@@ -53,9 +53,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: "gatsby-source-wordpress",
       options: {
-        url: `https://postyoulike.com/zetagroupapi/graphql`,
+        url: "https://postyoulike.com/zetagroupapi/graphql",
+        schema: {
+          requestConcurrency: 5,
+          timeout: 30000,
+        },
       },
     },
     `gatsby-plugin-react-helmet`
