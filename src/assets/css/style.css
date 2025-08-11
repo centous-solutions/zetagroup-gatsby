@@ -1,0 +1,1361 @@
+/* ==================================================================================
+            Font Fmaily
+=================================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Gilroy-Regular */
+@font-face {
+    font-display: Gilroy;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Gilroy-Medium */
+@font-face {
+    font-display: Gilroy;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Gilroy-SemiBold */
+@font-face {
+    font-display: Gilroy;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Gilroy-Bold*/
+@font-face {
+    font-display: Gilroy;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ==================================================================================
+    Common Css Start
+=================================================================================== */
+
+:root {
+    --font-family-text: 'Gilroy';
+    --font-family-heading: 'Montserrat';
+    --text-color: rgba(73, 74, 82, 1);
+    --white-text-color: rgba(255, 255, 255, 1);
+    --btn-color-primary: rgba(122, 204, 197, 1);
+    --border-color: rgba(211, 229, 233, 1);
+    --svg-color: rgba(56, 56, 56, 1);
+    --heading-h2-size: 50px;
+    --heading-h3-size: 40px;
+    --heading-h4-size: 34px;
+    --heading-h5-size: 24px;
+    --listing-li-size: 20px;
+    --para-txt: 22px;
+    --text-box-size: 18px;
+    --btn-font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family-heading);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1820px;
+    padding: 0px 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-heading);
+    color: var(--text-color);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--heading-h2-size);
+}
+
+h3 {
+    font-size: var(--heading-h3-size);
+}
+
+h4 {
+    font-size: var(--heading-h4-size);
+}
+
+h5 {
+    font-size: var(--heading-h5-size);
+}
+
+p {
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: var(--para-txt);
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--text-color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: var(--listing-li-size);
+    line-height: 1.5;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.btn.btn-primary,
+:not(.btn-check)+.btn:active {
+    position: relative;
+    background-color: var(--btn-color-primary);
+    border-color: var(--btn-color-primary);
+    border-radius: 2px;
+    color: var(--white-text-color);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    font-size: var(--btn-font-size);
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn.btn-primary svg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.btn.btn-primary:hover {
+    background-color: transparent;
+    color: var(--btn-color-primary);
+}
+
+.btn.btn-primary:hover svg path {
+    fill: var(--btn-color-primary);
+}
+
+.btn.btn-primary:focus-visible {
+    box-shadow: none;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pt-46 {
+    padding-top: 46px;
+}
+
+.pb-46 {
+    padding-bottom: 46px;
+}
+
+.bg-sky {
+    background-color: rgba(211, 229, 233, 1);
+}
+
+.bg-dark-sky {
+    background-color: rgba(84, 110, 122, 1);
+}
+
+.bg-sky-light {
+    background-color: rgba(237, 241, 242, 1);
+}
+
+.bg-sky-primary {
+    background-color: rgba(122, 204, 197, 1);
+}
+
+.txt-white,
+.bg-dark-sky h2,
+.bg-dark-sky h3,
+.bg-dark-sky h4,
+.bg-dark-sky p,
+.bg-dark-sky li,
+.bg-sky-primary h2,
+.bg-sky-primary h3,
+.bg-sky-primary h4,
+.bg-sky-primary p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.bg-sky-primary .btn.btn-primary {
+    border-color: var(--white-text-color);
+    background-color: transparent;
+}
+
+.bg-sky-primary .btn.btn-primary:hover {
+    color: var(--white-text-color);
+}
+
+.bg-sky-primary .btn.btn-primary:hover svg path {
+    fill: var(--white-text-color);
+}
+
+.bg-white-gradient {
+    background: linear-gradient(180deg, #EDF1F2 0%, rgba(237, 241, 242, 0.34) 100%);
+}
+
+
+/* ==================================================================================
+    Common Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Header Css Start
+=================================================================================== */
+
+.header-main {
+    padding-top: 60px;
+    /* display: none; */
+}
+
+.top-header {
+    border-bottom: 1px solid rgba(73, 74, 82, 0.4);
+    padding-bottom: 18px;
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+}
+
+.top-header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.top-header ul li {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 24px;
+    text-transform: unset;
+    border-right: 1px solid rgba(73, 74, 82, 1);
+    color: var(--text-color);
+}
+
+.header-main .top-header ul li:last-child {
+    border-right: none;
+}
+
+.social-media-group {
+    display: flex;
+    gap: 24px;
+}
+
+.top-header ul li a {
+    color: var(--text-color);
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.logo-wrap a img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.main-header-right .btn.btn-primary {
+    font-weight: 700;
+}
+
+.main-header-center nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.main-header-center nav a {
+    color: var(--svg-color);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-header-center nav .submenu a::before {
+    content: "-";
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Submenu base */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 8px 0;
+    min-width: 150px;
+    z-index: 10;
+    border-top: 4px solid var(--btn-color-primary);
+    border-bottom: 4px solid var(--btn-color-primary);
+}
+
+.submenu a {
+    padding: 8px 16px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    color: var(--btn-color-primary);
+}
+
+.has-submenu:hover .submenu {
+    display: flex;
+}
+
+/* Submenu arrow */
+
+.has-submenu>a::after {
+    content: "";
+    font-size: 0.7rem;
+    margin-left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M12 7.50002C12 7.50002 9.79053 10.5 8.99998 10.5C8.20942 10.5 6 7.5 6 7.5' stroke='%23383838' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    width: 0;
+    opacity: 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 130%;
+    left: 0;
+}
+
+#search-bar.show {
+    width: 200px;
+    opacity: 1;
+}
+
+.searchbar-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Without background header */
+
+.white-bg-header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.white-bg-header .top-header ul li {
+    border-right: 1px solid rgba(255, 255, 255, 1);
+}
+
+.white-bg-header .top-header ul li a {
+    color: var(--white-text-color);
+    transition: all 0.3s ease;
+}
+
+.white-bg-header .top-header svg path {
+    fill: var(--white-text-color);
+}
+
+.white-bg-header .top-header .social-media-group a:hover svg path {
+    fill: var(--svg-color);
+}
+
+.white-bg-header .top-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.white-bg-header .main-header-center nav a {
+    color: var(--white-text-color);
+}
+
+.white-bg-header .main-header-center nav .submenu a {
+    color: var(--svg-color);
+}
+
+.white-bg-header .main-header-center nav .submenu a:hover {
+    color: var(--btn-color-primary);
+}
+
+.white-bg-header .has-submenu>a::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M12 7.50002C12 7.50002 9.79053 10.5 8.99998 10.5C8.20942 10.5 6 7.5 6 7.5' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ==================================================================================
+    Header Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Banner Section Css Start
+=================================================================================== */
+
+.banner-slide-wrap .video-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-wrap::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.35);
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.video-wrap img {
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-slide-wrap .container {
+    height: 100vh;
+}
+
+.banner-slide-wrap {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    height: 85%;
+    align-items: end;
+}
+
+.banner-slide-wrap h1 {
+    font-size: 60px;
+    width: 100%;
+    max-width: 1150px;
+    color: var(--white-text-color);
+}
+
+/* ==================================================================================
+    Banner Section Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Product We Make Css Start
+=================================================================================== */
+
+.pro-listing-dls h3 {
+    margin: 0 0 20px;
+}
+
+.pro-listing-dls p {
+    margin: 0 0 40px;
+}
+
+.pro-listing-dls ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    margin: 0 0 40px;
+    list-style: square;
+    padding: revert-layer;
+}
+
+.pro-listing-dls ul li {
+    width: 50%;
+}
+
+.pro-listing-img img {
+    border-radius: 2px;
+    width: 100%;
+    max-width: 95%;
+}
+
+.product-make-dls .row,
+.product-make-listing .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.product-make-listing .row.flex-row-reverse li {
+    width: 100%;
+}
+
+.product-make-listing .row.flex-row-reverse .pro-listing-dls {
+    max-width: 95%;
+}
+
+/* ==================================================================================
+    Product We Make Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Your Manufacturing Partner Css Start
+=================================================================================== */
+
+.manu-parter-dls .row {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.manu-parter-dls-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.manu-parter-dls-txt {
+    width: 50%;
+    height: 100%;
+    min-height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.manu-parter-dls-txt h4 {
+    margin: 0 0 20px;
+}
+
+.manu-parter-dls-txt p {
+    margin: 0 0 40px;
+}
+
+.manu-parter-dls-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48%;
+    z-index: 1;
+}
+
+.manu-parter-reverse .manu-parter-dls-img {
+    left: 0;
+}
+
+.manu-parter-reverse .manu-parter-dls-txt {
+    margin-left: auto;
+}
+
+/* ==================================================================================
+    Your Manufacturing Partner Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Our Turnkey Process Css Start
+=================================================================================== */
+
+.our-turnkey-right {
+    padding: 0 35px;
+}
+
+.our-turnkey-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 52px 16px 10px 52px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.our-turnkey-box p {
+    font-size: var(--text-box-size);
+}
+
+.box-counter {
+    opacity: 0;
+    text-align: right;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 100%;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.our-turnkey-box:hover {
+    background-color: var(--btn-color-primary);
+}
+
+.our-turnkey-box:hover .box-counter {
+    opacity: 1;
+}
+
+.our-turnkey-box img {
+    width: 100%;
+    max-width: fit-content;
+}
+
+.our-turnkey-box:hover img {
+    filter: brightness(100);
+}
+
+.our-turnkey-box:hover h5,
+.our-turnkey-box:hover p {
+    color: var(--white-text-color);
+}
+
+.our-turnkey-box:hover svg path {
+    fill: var(--white-text-color);
+}
+
+.turnkey-box-wrap {
+    border-right: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.turnkey-box-wrap:nth-child(8),
+.turnkey-box-wrap:nth-child(4) {
+    border-right: none;
+}
+
+.turnkey-box-img {
+    min-height: 80px;
+}
+
+.aerrow-nubreic {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.our-turnkey-listing .row {
+    row-gap: 18px;
+}
+
+/* ==================================================================================
+   Our Turnkey Process Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Eco-Friendly Care Css Start
+=================================================================================== */
+
+.eco-friendly-box {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.eco-friendly-spacing {
+    height: 100%;
+    padding: 6px;
+}
+
+.eco-friendly-box:hover {
+    background-color: var(--btn-color-primary);
+}
+
+.eco-friendly-box:hover img {
+    filter: brightness(100);
+}
+
+.eco-friendly-box:hover a {
+    color: var(--white-text-color);
+}
+
+.eco-friendly-box img {
+    width: 100%;
+    max-width: 40px;
+    margin-left: auto;
+}
+
+.eco-friendly-box a {
+    font-size: var(--listing-li-size);
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.friendly-listing-wrap {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.friendly-listing-wrap:first-child {
+    border-right: 1px solid var(--border-color);
+}
+
+.friendly-listing-wrap:last-child,
+.row.justify-content-end .friendly-listing-wrap:first-child {
+    border-bottom: none;
+}
+
+/* ==================================================================================
+    Eco-Friendly Care Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Our Brands Section Css Start
+=================================================================================== */
+
+.our-brands-sec .row {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.our-brands-sec .row .our-brands-col {
+    padding: 0;
+}
+
+.our-brands-slide>img {
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.our-brands-slide {
+    position: relative;
+}
+
+.brands-thubnail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brands-thubnail img {
+    max-width: 434px;
+}
+
+.our-brands-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.brands-thubnail-wrap {
+    background-color: var(--white-text-color);
+}
+
+.thubnail-wrap-col {
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    position: relative;
+}
+
+.thubnail-wrap-col::after {
+    content: " ";
+    border-right: 1px solid var(--border-color);
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.thubnail-wrap-col:last-child::after {
+    content: none;
+}
+
+.thubnail-wrap-col.active {
+    background-color: var(--btn-color-primary);
+    border-radius: 0 0 16px 0;
+}
+
+.thubnail-wrap-col.active img {
+    filter: brightness(100);
+}
+
+.thubnail-wrap-col .thubnail-brands {
+    margin: auto auto 36px;
+}
+
+.thubnail-wrap-col:first-child .thubnail-brands {
+    margin: auto 40px 36px auto;
+}
+
+.thubnail-wrap-col:last-child .thubnail-brands {
+    margin: auto auto 36px 40px;
+}
+
+/* ==================================================================================
+   Our Brands Section Css End
+=================================================================================== */
+
+/* ==================================================================================
+   What Zeta Group Success Css Start
+=================================================================================== */
+
+.drives-success-left h2 {
+    margin: 0 0 20px;
+}
+
+.drives-success-title .row {
+    align-items: self-end;
+}
+
+.counter-wrap h2 {
+    font-size: calc(var(--heading-h2-size) + 10px);
+}
+
+.counter-wrap h2 sup {
+    font-size: var(--listing-li-size);
+    top: -2em;
+}
+
+.counter-wrap p {
+    font-weight: 500;
+}
+
+/* ==================================================================================
+    What Zeta Group Success Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Video Section Css Start
+=================================================================================== */
+
+.video-poster-img img {
+    width: 100%;
+}
+
+.video-poster-img {
+    position: relative;
+}
+
+.video-play-button {
+    border: 2px solid rgba(255, 255, 255, 1);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    right: 272px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-play-button span {
+    color: var(--white-text-color);
+    font-family: var(--font-family-text);
+    text-transform: uppercase;
+    font-size: var(--para-txt);
+}
+
+.video-play-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ==================================================================================
+   Video Section Css End
+=================================================================================== */
+
+/* ==================================================================================
+  Global Presence Css Start
+=================================================================================== */
+
+.global-presence-sec {
+    background-image: url(../images/global-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.global-presence-form {
+    background-color: rgba(122, 204, 197, 0.84);
+    width: 100%;
+    max-width: 830px;
+    margin-left: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    min-height: 910px;
+    justify-content: center;
+}
+
+.global-presence-title {
+    padding: 116px 0 160px;
+}
+
+.global-presence-title h2 {
+    color: var(--white-text-color);
+}
+
+/* ==================================================================================
+    Global Presence Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Form Section Css Start
+=================================================================================== */
+
+.form-wrap .row {
+    align-items: center;
+}
+
+.partner-form-list .row {
+    row-gap: 50px;
+}
+
+.partner-form-list .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-width: 0px 0px 1px 0px;
+    color: var(--white-text-color);
+    padding: 0 20px 16px;
+    font-family: var(--font-family-text);
+    font-size: var(--para-txt);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.partner-form-list .form-control:focus {
+    box-shadow: none;
+    border-color: unset;
+}
+
+.partner-form-list .form-control::placeholder {
+    color: var(--white-text-color);
+}
+
+.partner-form-list .form-text p {
+    font-size: calc(var(--para-txt) - 4px);
+}
+
+/* ==================================================================================
+    Form Section Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Email Contact Section Css Start
+=================================================================================== */
+
+.email-contact-sec .eco-friendly-box a {
+    font-size: unset;
+}
+
+.email-contact-sec .eco-friendly-box:hover p {
+    color: var(--white-text-color);
+}
+
+.email-contact-sec .eco-friendly-box p {
+    font-size: calc(var(--para-txt) - 2px);
+}
+
+/* ==================================================================================
+   Email Contact Section Css End
+=================================================================================== */
+
+/* ==================================================================================
+   Footer Section Css Start  
+=================================================================================== */
+
+.footer-logo a img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-navs h5 {
+    color: var(--btn-color-primary);
+    font-size: calc(var(--heading-h5-size) - 2px);
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+.footer-navs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-navs ul li,
+.footer-address p {
+    font-weight: 500;
+    font-family: var(--font-family-text);
+    font-size: calc(var(--listing-li-size) - 2px);
+}
+
+.footer-navs ul li a {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.footer-address:first-child {
+    margin: 0 0 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0 24px;
+}
+
+.footer-bottom a,
+.footer-bottom p {
+    color: var(--text-color);
+    font-size: calc(var(--para-txt) - 6px);
+}
+
+/* ==================================================================================
+   Footer Section Css End  
+=================================================================================== */
+
+/* ==================================================================================
+   Full Range Of Wipes Page Css Start
+=================================================================================== */
+
+.banner-slide-bg {
+    height: 100%;
+    margin-top: 65px;
+}
+
+.banner-slide-bg-wrap {
+    background-color: rgba(122, 204, 197, 0.42);
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 0 271px 0 0;
+    backdrop-filter: blur(17.299999237060547px);
+}
+
+.banner-slide-bg-wrap p {
+    max-width: 812px;
+    color: var(--white-text-color);
+    font-size: calc(var(--para-txt) + 2px);
+    margin-top: 28px;
+}
+
+.custom-wipes-sec::before {
+    content: "";
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: calc(100% - 65px);
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    max-width: 1800px;
+    border-radius: 38px 0 0 38px;
+}
+
+.custom-wet-wipes {
+    position: relative;
+}
+
+.custom-wipes-wrap {
+    z-index: 999;
+    position: relative;
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+.custom-wipes-wrap .friendly-listing-wrap {
+    border-right: 1px solid var(--border-color);
+}
+
+.custom-wipes-wrap .friendly-listing-wrap:nth-last-child(1) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.custom-wipes-wrap .friendly-listing-wrap:nth-last-child(3),
+.custom-wipes-wrap .friendly-listing-wrap:nth-last-child(4) {
+    border-bottom: none;
+}
+
+.custom-wipes-wrap .friendly-listing-wrap:nth-last-child(3) {
+    border-right: none;
+}
+
+.wipes-title {
+    display: flex;
+    align-items: center;
+}
+
+.wipes-title h5 {
+    display: flex;
+    gap: 20px;
+}
+
+.custom-wipes-wrap .eco-friendly-box img {
+    max-width: 70px;
+}
+
+.custom-wipes-wrap .eco-friendly-box p {
+    font-size: calc(var(--para-txt) - 2px);
+}
+
+.eco-friendly-box:hover h5,
+.eco-friendly-box:hover p {
+    color: var(--white-text-color);
+}
+
+.custom-wipes-wrap .wipes-formula-listing .row {
+    justify-content: end;
+}
+
+.wipes-solution-sec .pro-listing-dls ul li {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.wipes-solution-sec .pro-listing-dls ul li::before {
+    content: " ";
+    width: 28px;
+    height: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d=' M13.5466 21.2355L5.37652 13.0655L9.09664 9.33991L13.5466 13.7871L23.5371 3.79528C21.0387 1.44736 17.6821 0 13.9812 0C6.25663 0 0 6.25808 0 13.9839C0 21.7057 6.25663 27.9665 13.9812 27.9665C21.7057 27.9665 27.9651 21.7057 27.9651 13.9839C27.9651 11.8847 27.4895 9.903 26.664 8.11677L13.5466 21.2355Z' fill=' %237ACCC5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id=' clip0'%3E%3Crect width=' 28' height=' 28' fill=' white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.wipes-solution-sec .pro-listing-dls ul {
+    row-gap: 36px;
+    margin: 0;
+    list-style: none;
+}
+
+.ingredient-title h2 {
+    margin: 0 0 20px;
+}
+
+.ingredient-title p {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.formula-img {
+    text-align: center;
+}
+
+.formula-img img {
+    width: 100%;
+    max-width: 1240px;
+}
+
+.material-box {
+    background-color: rgba(250, 250, 250, 1);
+    padding: 20px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-box-img {
+    margin: 0 0 20px;
+    overflow: hidden;
+
+}
+
+.material-box p {
+    font-size: calc(var(--para-txt) - 4px);
+    margin: 10px 0;
+}
+
+.material-box .btn.btn-primary {
+    opacity: 0;
+    color: var(--text-color);
+    width: 100%;
+    font-size: calc(var(--btn-font-size) + 2px);
+    background-color: transparent;
+    border-color: transparent;
+    padding: 14px 0 0;
+    transition: all 0.5s ease;
+    margin-top: auto;
+}
+
+.material-box .btn.btn-primary svg path {
+    fill: var(--text-color);
+}
+
+.material-box-img img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.material-box-img:hover img {
+    transform: scale(1.2);
+}
+
+.material-box:hover .btn.btn-primary {
+    opacity: 1;
+}
+
+.tailored-frmulations-sec .manu-parter-dls-txt p {
+    max-width: 700px;
+    margin: 20px 0 40px;
+}
+
+.packaging-sol-title .row {
+    justify-content: space-between;
+}
+
+.packaging-solution-sec .eco-friendly-box {
+    gap: 10px;
+    justify-content: flex-start;
+    border-right: 1px solid var(--border-color);
+}
+
+.packaging-solution-sec .eco-friendly-box img {
+    max-width: 100%;
+    margin-top: auto;
+}
+
+.packaging-solution-sec .eco-friendly-box p {
+    font-size: calc(var(--para-txt) - 4px);
+    margin: 0 0 54px;
+}
+
+.packaging-solution-sec .eco-friendly-box:hover img {
+    filter: unset;
+}
+
+.wipes-border {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.design-assistance-sec .manu-parter-dls-txt p {
+    margin: 40px 0 0;
+}
+
+.certified-title {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.certified-sec-slide {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.certified-box img {
+    filter: opacity(0.6);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.certified-box:hover img {
+    filter: opacity(1);
+}
+
+.manu-parter-dls {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ==================================================================================
+   Full Range Of Wipes Page Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Baby Nappies and Pants Start
+=================================================================================== */
+
+.poster-img img {
+    width: 100%;
+}
+
+.banner-dls-wrap p {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 60px;
+}
+
+.banner-dls-wrap .btn.btn-primary {
+    justify-content: center;
+    margin: auto;
+}
+
+/* ==================================================================================
+   Baby Nappies and Pants End
+=================================================================================== */
