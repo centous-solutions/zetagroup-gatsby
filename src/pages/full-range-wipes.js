@@ -13,7 +13,7 @@ import Certified from "../components/full-range-wipes/certified";
 import Form from "../components/full-range-wipes/form";
 import EmailContact from "../components/emailcontact";
 
-const IndexPage = (props) => {
+const FullRangeWipesPage = (props) => {
     const seoData = props.data?.site?.siteMetadata || {};
 
     return (
@@ -37,4 +37,4 @@ const IndexPage = (props) => {
     )
 };
 
-export default IndexPage;
+export default FullRangeWipesPage;

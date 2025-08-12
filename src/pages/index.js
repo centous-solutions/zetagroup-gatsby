@@ -11,7 +11,7 @@ import OurBrands from "../components/home/ourbrands";
 import ZetaGroupSuccess from "../components/home/zetagroupsuccess";
 import Video from "../components/home/video";
 import GlobalPresence from "../components/home/globalpresence";
-import Form from "../components/home/form";
+import Form from "../components/form";
 import EmailContact from "../components/emailcontact";
 
 const IndexPage = (props) => {
