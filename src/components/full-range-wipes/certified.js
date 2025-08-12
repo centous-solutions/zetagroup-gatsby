@@ -26,6 +26,7 @@ const Certified = () => {
                     speed={500}
                     slidesToShow={5}
                     slidesToScroll={1}
+                    arrows={false}
                 >
                     <div className="certified-box">
                         <img src={slide1} alt="certified-1" />
