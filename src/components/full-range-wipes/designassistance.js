@@ -3,13 +3,13 @@ import designAssistant from '../../assets/images/design-assistant.jpg';
 
 const DesignAssistance = () => {
     return (
-        <section class="bg-sky-primary manu-parter-reverse design-assistance-sec">
-            <div class="manu-parter-dls">
-                <div class="manu-parter-dls-img">
+        <section className="bg-sky-primary manu-parter-reverse design-assistance-sec">
+            <div className="manu-parter-dls">
+                <div className="manu-parter-dls-img">
                     <img src={designAssistant} alt="design assistant" />
                 </div>
-                <div class="container">
-                    <div class="manu-parter-dls-txt">
+                <div className="container">
+                    <div className="manu-parter-dls-txt">
                         <h2>Design assistance for your brand</h2>
                         <p>
                             Our experienced design team expertly handles the technical requirements for packaging,

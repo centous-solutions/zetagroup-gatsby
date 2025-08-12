@@ -8,12 +8,12 @@ import miniStartsThumbnail from '../../assets/images/mini-starts-thubnail.svg';
 
 const OurBrands = () => {
     return (
-        <section class="bg-dark-sky our-brands-sec">
-            <div class="row">
-                <div class="col-lg-4 our-brands-col">
-                    <div class="our-brands-dls">
-                        <div class="container">
-                            <div class="our-brands-left">
+        <section className="bg-dark-sky our-brands-sec">
+            <div className="row">
+                <div className="col-lg-4 our-brands-col">
+                    <div className="our-brands-dls">
+                        <div className="container">
+                            <div className="our-brands-left">
                                 <h2>Our Brands</h2>
                                 <p>
                                     Our portfolio of award-winning brands is proudly developed in New Zealand and supported
@@ -22,7 +22,7 @@ const OurBrands = () => {
                                     broad
                                     spectrum of retailer and consumer needs.
                                 </p>
-                                <a href="#" class="btn btn-primary">Become Our Distributor
+                                <a href="#" className="btn btn-primary">Become Our Distributor
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -36,34 +36,34 @@ const OurBrands = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 our-brands-col">
-                    <div class="our-brands-slide">
+                <div className="col-lg-8 our-brands-col">
+                    <div className="our-brands-slide">
                         <img src={ourBrandSliders} alt="our-brands-slider" />
-                        <div class="brands-thubnail">
+                        <div className="brands-thubnail">
                             <img src={ourBrandThumbnail} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="brands-thubnail-wrap">
-                <div class="row">
-                    <div class="col-md-4 thubnail-wrap-col active">
-                        <div class="thubnail-brands">
+            <div className="brands-thubnail-wrap">
+                <div className="row">
+                    <div className="col-md-4 thubnail-wrap-col active">
+                        <div className="thubnail-brands">
                             <img src={teraThumbnail} alt="" />
                         </div>
                     </div>
-                    <div class="col-md-2 thubnail-wrap-col">
-                        <div class="thubnail-brands">
+                    <div className="col-md-2 thubnail-wrap-col">
+                        <div className="thubnail-brands">
                             <img src={kiddicareThumbnail} alt="" />
                         </div>
                     </div>
-                    <div class="col-md-2 thubnail-wrap-col">
-                        <div class="thubnail-brands">
+                    <div className="col-md-2 thubnail-wrap-col">
+                        <div className="thubnail-brands">
                             <img src={betterLivingThumbnail} alt="" />
                         </div>
                     </div>
-                    <div class="col-md-4 thubnail-wrap-col">
-                        <div class="thubnail-brands">
+                    <div className="col-md-4 thubnail-wrap-col">
+                        <div className="thubnail-brands">
                             <img src={miniStartsThumbnail} alt="" />
                         </div>
                     </div>

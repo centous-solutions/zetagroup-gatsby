@@ -3,10 +3,10 @@ import tailoredFormulations from '../../assets/images/tailored-frmulations.jpg';
 
 const TailoredFormulations = () => {
     return (
-        <section class="tailored-frmulations-sec pt-46 pb-46">
-            <div class="manu-parter-dls">
-                <div class="container">
-                    <div class="manu-parter-dls-txt">
+        <section className="tailored-frmulations-sec pt-46 pb-46">
+            <div className="manu-parter-dls">
+                <div className="container">
+                    <div className="manu-parter-dls-txt">
                         <h2>TAILORED FORMULATIONS TO MEET YOUR SPECIFIC NEEDS</h2>
                         <p>
                             Our experienced in-house chemists specialize in developing customized formulations to
@@ -15,7 +15,7 @@ const TailoredFormulations = () => {
                             guidance
                             and innovative solutions designed to give you a competitive edge.
                         </p>
-                        <a href="#" class="btn btn-primary">Start your wipes project now
+                        <a href="#" className="btn btn-primary">Start your wipes project now
                             <span>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@ const TailoredFormulations = () => {
                         </a>
                     </div>
                 </div>
-                <div class="manu-parter-dls-img">
+                <div className="manu-parter-dls-img">
                     <img src={tailoredFormulations} alt="Manufacturing partner" />
                 </div>
 

@@ -7,18 +7,18 @@ import wipesDesign from '../../assets/images/wipes-design.svg';
 
 const CustomWetWipes = () => {
     return (
-        <section class="bg-sky-light custom-wet-wipes">
-            <div class="container">
-                <div class="pt-80 custom-wipes-sec">
-                    <div class="custom-wipes-wrap pt-80 pb-80">
-                        <div class="row pb-46">
-                            <div class="col-md-6">
-                                <div class="left-product-name">
+        <section className="bg-sky-light custom-wet-wipes">
+            <div className="container">
+                <div className="pt-80 custom-wipes-sec">
+                    <div className="custom-wipes-wrap pt-80 pb-80">
+                        <div className="row pb-46">
+                            <div className="col-md-6">
+                                <div className="left-product-name">
                                     <h2>Custom Wet Wipes</h2>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="left-product-dls">
+                            <div className="col-md-6">
+                                <div className="left-product-dls">
                                     <p>
                                         We offer a diverse range of we wipes with fully customizable options. Tailor the
                                         scent, cloth, ingredients and packaging to suit your market.
@@ -26,12 +26,12 @@ const CustomWetWipes = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="wipes-formula-listing">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 friendly-listing-wrap">
-                                    <div class="eco-friendly-spacing">
-                                        <div class="eco-friendly-box">
-                                            <div class="wipes-title">
+                        <div className="wipes-formula-listing">
+                            <div className="row">
+                                <div className="col-lg-4 col-md-6 friendly-listing-wrap">
+                                    <div className="eco-friendly-spacing">
+                                        <div className="eco-friendly-box">
+                                            <div className="wipes-title">
                                                 <h5><span>1</span>Start With An Idea</h5>
                                                 <img src={wipesIdea} alt="wipes idea" />
                                             </div>
@@ -39,10 +39,10 @@ const CustomWetWipes = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 friendly-listing-wrap">
-                                    <div class="eco-friendly-spacing">
-                                        <div class="eco-friendly-box">
-                                            <div class="wipes-title">
+                                <div className="col-lg-4 col-md-6 friendly-listing-wrap">
+                                    <div className="eco-friendly-spacing">
+                                        <div className="eco-friendly-box">
+                                            <div className="wipes-title">
                                                 <h5><span>2</span>Material</h5>
                                                 <img src={wipesMaterial} alt="wipes idea" />
                                             </div>
@@ -51,10 +51,10 @@ const CustomWetWipes = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 friendly-listing-wrap">
-                                    <div class="eco-friendly-spacing">
-                                        <div class="eco-friendly-box">
-                                            <div class="wipes-title">
+                                <div className="col-lg-4 col-md-6 friendly-listing-wrap">
+                                    <div className="eco-friendly-spacing">
+                                        <div className="eco-friendly-box">
+                                            <div className="wipes-title">
                                                 <h5><span>3</span>Formulations</h5>
                                                 <img src={wipesFormulations} alt="wipes idea" />
                                             </div>
@@ -63,10 +63,10 @@ const CustomWetWipes = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 friendly-listing-wrap">
-                                    <div class="eco-friendly-spacing">
-                                        <div class="eco-friendly-box">
-                                            <div class="wipes-title">
+                                <div className="col-lg-4 col-md-6 friendly-listing-wrap">
+                                    <div className="eco-friendly-spacing">
+                                        <div className="eco-friendly-box">
+                                            <div className="wipes-title">
                                                 <h5><span>4</span>Packaging</h5>
                                                 <img src={wipesPacking} alt="wipes packing" />
                                             </div>
@@ -75,10 +75,10 @@ const CustomWetWipes = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 friendly-listing-wrap">
-                                    <div class="eco-friendly-spacing">
-                                        <div class="eco-friendly-box">
-                                            <div class="wipes-title">
+                                <div className="col-lg-4 col-md-6 friendly-listing-wrap">
+                                    <div className="eco-friendly-spacing">
+                                        <div className="eco-friendly-box">
+                                            <div className="wipes-title">
                                                 <h5><span>5</span>Design</h5>
                                                 <img src={wipesDesign} alt="wipes idea" />
                                             </div>

@@ -2,12 +2,12 @@ import React from 'react'
 
 const GlobalPresence = () => {
     return (
-        <div class="global-presence-sec ">
-            <div class="global-presence-form bg-sky-primary">
+        <div className="global-presence-sec ">
+            <div className="global-presence-form bg-sky-primary">
                 <h2>Global Presence</h2>
                 <p>Our wipe and nappy factories feature advanced manufacturing techniques, currently serving 320 clients in
                     29 countries and counting. </p>
-                <a href="#" class="btn btn-primary">Find out more
+                <a href="#" className="btn btn-primary">Find out more
                     <span>
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -17,8 +17,8 @@ const GlobalPresence = () => {
                     </span>
                 </a>
             </div>
-            <div class="container global-presence-title">
-                <h2 class="text-center">Your success is our success</h2>
+            <div className="container global-presence-title">
+                <h2 className="text-center">Your success is our success</h2>
             </div>
         </div>
     )

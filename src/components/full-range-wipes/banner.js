@@ -3,13 +3,13 @@ import banner from '../../assets/images/range-wipes-banner.jpg';
 
 const Banner = () => {
     return (
-        <section class="banner-slide-wrap">
-            <div class="video-wrap">
+        <section className="banner-slide-wrap">
+            <div className="video-wrap">
                 <img src={banner} alt="range wipes banner" />
             </div>
-            <div class="container">
-                <div class="banner-slide-wrap banner-slide-bg">
-                    <div class="banner-slide-bg-wrap">
+            <div className="container">
+                <div className="banner-slide-wrap banner-slide-bg">
+                    <div className="banner-slide-bg-wrap">
                         <h1>COMPREHENSIVE WIPE RANGE</h1>
                         <p>
                             Our diverse selection offers solutions for every market—from premium, biodegradable materials to

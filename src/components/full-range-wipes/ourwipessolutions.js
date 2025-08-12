@@ -6,31 +6,31 @@ import petWipes from '../../assets/images/Pet-wipes.jpg';
 
 const OurWipesSolutions = () => {
     return (
-        <section class="bg-dark-sky pt-80 wipes-solution-sec">
-            <div class="container">
-                <div class="row pb-46">
-                    <div class="col-md-6">
-                        <div class="left-product-name">
+        <section className="bg-dark-sky pt-80 wipes-solution-sec">
+            <div className="container">
+                <div className="row pb-46">
+                    <div className="col-md-6">
+                        <div className="left-product-name">
                             <h2>OUR WIPES SOLUTIONS</h2>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="left-product-dls">
+                    <div className="col-md-6">
+                        <div className="left-product-dls">
                             <p>
                                 Our wipes are designed to provide the utmost convenience and care for various needs.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="product-make-listing">
-                    <div class="row pb-46">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                <div className="product-make-listing">
+                    <div className="row pb-46">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={babyWipesSolutions} alt="baby-wipes-solutions" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Baby wipes</h3>
                                 <p>
                                     We are proud to produce a wide variety of the worlds finest, award winning baby wipes.
@@ -47,14 +47,14 @@ const OurWipesSolutions = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-row-reverse pb-46">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                    <div className="row flex-row-reverse pb-46">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={personalCareWipes} alt="nappy pants" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Personal care wipes</h3>
                                 <p>We’ve designed an extensive range of wipes for personal hygiene made with customisable
                                     ingredients that cleanse and moisturise the entire body. Our Chemists can help you
@@ -69,14 +69,14 @@ const OurWipesSolutions = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row pb-46">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                    <div className="row pb-46">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={cleaningWipes} alt="Cleaning Wipes" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Cleaning Wipes</h3>
                                 <p>
                                     We can offer effective solutions for cleaning kitchen, appliances, bathroom fixtures and
@@ -93,14 +93,14 @@ const OurWipesSolutions = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-row-reverse">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                    <div className="row flex-row-reverse">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={petWipes} alt="Cleaning Wipes" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Pet wipes</h3>
                                 <p>
                                     Specifically formulated for pet grooming and cleaning, our pet wipes help maintain

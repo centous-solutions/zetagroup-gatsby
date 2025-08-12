@@ -2,63 +2,63 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <section class="bg-dark-sky form-section-wrap pt-80 pb-80">
-            <div class="container">
-                <div class="form-wrap pb-80">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-section-left">
+        <section className="bg-dark-sky form-section-wrap pt-80 pb-80">
+            <div className="container">
+                <div className="form-wrap pb-80">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="form-section-left">
                                 <h2>Partner with us</h2>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-section-right">
+                        <div className="col-md-6">
+                            <div className="form-section-right">
                                 <p>Complete our form below, and one of our team members will get back to you as soon as
                                     possible!</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="partner-form-list">
+                <div className="partner-form-list">
                     <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-list-field">
-                                    <input type="text" class="form-control" id="name" aria-describedby="name"
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="form-list-field">
+                                    <input type="text" className="form-control" id="name" aria-describedby="name"
                                         placeholder="Name*" />
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-list-field">
-                                    <input type="text" class="form-control" id="company-name"
+                            <div className="col-md-6">
+                                <div className="form-list-field">
+                                    <input type="text" className="form-control" id="company-name"
                                         aria-describedby="company-name" placeholder="Company name" />
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-list-field">
-                                    <input type="text" class="form-control" id="company-name"
+                            <div className="col-md-6">
+                                <div className="form-list-field">
+                                    <input type="text" className="form-control" id="company-name"
                                         aria-describedby="phone-number" placeholder="Phone number*" />
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-list-field">
-                                    <input type="email" class="form-control" id="email" aria-describedby="email"
+                            <div className="col-md-6">
+                                <div className="form-list-field">
+                                    <input type="email" className="form-control" id="email" aria-describedby="email"
                                         placeholder="Email*" />
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Message" id="floatingTextarea"></textarea>
+                            <div className="col-md-12">
+                                <div className="form-floating">
+                                    <textarea className="form-control" placeholder="Message" id="floatingTextarea"></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-text">
+                            <div className="col-md-12">
+                                <div className="form-text">
                                     <p>By clicking the "Submit" button, you are agreeing to our Privacy Policy, Terms and
                                         Conditions for this shop</p>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">Submit
+                            <div className="col-md-12">
+                                <button type="submit" className="btn btn-primary">Submit
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">

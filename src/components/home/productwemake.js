@@ -4,32 +4,32 @@ import nappies1 from '../../assets/images/nappies-1.jpg';
 
 const ProductWeMake = () => {
     return (
-        <section class="product-make-wrap bg-sky pt-80">
-            <div class="container">
-                <div class="product-make-dls pb-46">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="left-product-name">
+        <section className="product-make-wrap bg-sky pt-80">
+            <div className="container">
+                <div className="product-make-dls pb-46">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="left-product-name">
                                 <h2>Products we make</h2>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="left-product-dls">
+                        <div className="col-md-6">
+                            <div className="left-product-dls">
                                 <p>We are helping businesses worldwide create better performing, greener alternatives to
                                     conventional products.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-make-listing">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                <div className="product-make-listing">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={wipes1} alt="we-make-wipes" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Wipes</h3>
                                 <p>With a wide variety of substrates, formulations, and packaging options, our wipes are
                                     designed to meet the diverse needs of multiple market segments. From personal care and
@@ -41,7 +41,7 @@ const ProductWeMake = () => {
                                     <li>Personal care wipes</li>
                                     <li>Pet care wipes</li>
                                 </ul>
-                                <a href="/full-range-wipes" class="btn btn-primary">FIND OUT MORE
+                                <a href="/full-range-wipes" className="btn btn-primary">FIND OUT MORE
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -54,14 +54,14 @@ const ProductWeMake = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-row-reverse">
-                        <div class="col-md-6">
-                            <div class="pro-listing-img">
+                    <div className="row flex-row-reverse">
+                        <div className="col-md-6">
+                            <div className="pro-listing-img">
                                 <img src={nappies1} alt="nappy pants" />
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="pro-listing-dls">
+                        <div className="col-md-6">
+                            <div className="pro-listing-dls">
                                 <h3>Nappies & Nappy pants</h3>
                                 <p>We have the ability to manufacture a broad range of nappies, from conventional,
                                     affordable options to mid-range, as well as premium nappies made with the highest level
@@ -72,7 +72,7 @@ const ProductWeMake = () => {
                                     <li>Baby Nappies & Nappy pants</li>
                                     <li>Adult Diapers & Diaper pants</li>
                                 </ul>
-                                <a href="#" class="btn btn-primary">FIND OUT MORE
+                                <a href="#" className="btn btn-primary">FIND OUT MORE
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">

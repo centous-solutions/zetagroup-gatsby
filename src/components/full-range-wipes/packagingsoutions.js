@@ -5,17 +5,17 @@ import classicPack from '../../assets/images/classic-pack.png';
 
 const PackagingSoutions = () => {
     return (
-        <section class="bg-white-gradient pt-80 pb-80 packaging-solution-sec">
-            <div class="container">
-                <div class="pb-46 packaging-sol-title">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="left-product-name">
+        <section className="bg-white-gradient pt-80 pb-80 packaging-solution-sec">
+            <div className="container">
+                <div className="pb-46 packaging-sol-title">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="left-product-name">
                                 <h2>PACKAGING SOLUTIONS</h2>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="left-product-dls">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="left-product-dls">
                                 <p>
                                     We offer tailored packaging solutions for your business. Each customizable wipe size and
                                     packaging option delivers unique benefits including: cost-efficiency, streamlined
@@ -26,11 +26,11 @@ const PackagingSoutions = () => {
                         </div>
                     </div>
                 </div>
-                <div class="wipes-formula-listing">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wipes-border">
-                            <div class="eco-friendly-spacing">
-                                <div class="eco-friendly-box">
+                <div className="wipes-formula-listing">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6 wipes-border">
+                            <div className="eco-friendly-spacing">
+                                <div className="eco-friendly-box">
                                     <h5>Single Sachet</h5>
                                     <p>
                                         Our pocket sized single sachets are perfect for on-the-go to sterile single use
@@ -40,9 +40,9 @@ const PackagingSoutions = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wipes-border">
-                            <div class="eco-friendly-spacing">
-                                <div class="eco-friendly-box">
+                        <div className="col-lg-4 col-md-6 wipes-border">
+                            <div className="eco-friendly-spacing">
+                                <div className="eco-friendly-box">
                                     <h5>Travel Pack</h5>
                                     <p>
                                         Designed for convenience and usually intended as a compact version of customers
@@ -52,9 +52,9 @@ const PackagingSoutions = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 wipes-border">
-                            <div class="eco-friendly-spacing">
-                                <div class="eco-friendly-box">
+                        <div className="col-lg-4 col-md-6 wipes-border">
+                            <div className="eco-friendly-spacing">
+                                <div className="eco-friendly-box">
                                     <h5>Classic</h5>
                                     <p>
                                         Our classic packs are a staple in all households. Ranging from 30 to 140 wipes and a

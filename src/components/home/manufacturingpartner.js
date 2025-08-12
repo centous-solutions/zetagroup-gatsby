@@ -3,18 +3,18 @@ import manufacturingPartner from '../../assets/images/Manufacturing-partner.jpg'
 
 const ManufacturingPartner = () => {
     return (
-        <section class="bg-dark-sky txt-white pt-80 manufacture-partner-sec manu-parter-reverse">
-            <div class="container">
-                <div class="pb-46 manu-parter-title">
+        <section className="bg-dark-sky txt-white pt-80 manufacture-partner-sec manu-parter-reverse">
+            <div className="container">
+                <div className="pb-46 manu-parter-title">
                     <h2>Your Manufacturing Partner</h2>
                 </div>
             </div>
-            <div class="manu-parter-dls">
-                <div class="manu-parter-dls-img">
+            <div className="manu-parter-dls">
+                <div className="manu-parter-dls-img">
                     <img src={manufacturingPartner} alt="design assistant" />
                 </div>
-                <div class="container">
-                    <div class="manu-parter-dls-txt">
+                <div className="container">
+                    <div className="manu-parter-dls-txt">
                         <h4>OEM Customers</h4>
                         <p>
                             We provide contract manufacturing services that meet the unique requirements of your
@@ -22,7 +22,7 @@ const ManufacturingPartner = () => {
                             expertise, coupled with a comprehensive range of services, provides for a streamlined
                             experience across all production stages.
                         </p>
-                        <a href="#" class="btn btn-primary">FIND OUT MORE
+                        <a href="#" className="btn btn-primary">FIND OUT MORE
                             <span>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

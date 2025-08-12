@@ -5,16 +5,16 @@ import material3 from '../../assets/images/material-3.jpg';
 
 const Materials = () => {
     return (
-        <section class="bg-sky pt-80 pb-80 material-sec">
-            <div class="container">
-                <div class="row pb-46">
-                    <div class="col-md-6">
-                        <div class="left-product-name">
+        <section className="bg-sky pt-80 pb-80 material-sec">
+            <div className="container">
+                <div className="row pb-46">
+                    <div className="col-md-6">
+                        <div className="left-product-name">
                             <h2>Material</h2>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="left-product-dls">
+                    <div className="col-md-6">
+                        <div className="left-product-dls">
                             <p>
                                 We offer several materials from which we craft the world’s finest wipes. Choose from our
                                 various options to start your project.
@@ -22,11 +22,11 @@ const Materials = () => {
                         </div>
                     </div>
                 </div>
-                <div class="material-sec-listing">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="material-box">
-                                <div class="material-box-img">
+                <div className="material-sec-listing">
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="material-box">
+                                <div className="material-box-img">
                                     <img src={material1} alt="material wipes" />
                                 </div>
                                 <h5>BIODEGRADABLE BAMBOO CLOTH</h5>
@@ -36,7 +36,7 @@ const Materials = () => {
                                     antibacterial properties. Bamboo is a renewable resource, biodegradable and requires
                                     fewer resources to grow making it the most eco friendly choice.
                                 </p>
-                                <a href="#" class="btn btn-primary">See Bamboo Cloth Testing
+                                <a href="#" className="btn btn-primary">See Bamboo Cloth Testing
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -48,9 +48,9 @@ const Materials = () => {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="material-box">
-                                <div class="material-box-img">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="material-box">
+                                <div className="material-box-img">
                                     <img src={material2} alt="material wipes" />
                                 </div>
                                 <h5>plant-based Viscose cloth</h5>
@@ -60,7 +60,7 @@ const Materials = () => {
                                     affordable plant-based option for wet wipes. This viscose material provides softness and
                                     strength, while minimizing any skin irritation.
                                 </p>
-                                <a href="#" class="btn btn-primary">See Bamboo Cloth Testing
+                                <a href="#" className="btn btn-primary">See Bamboo Cloth Testing
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -72,9 +72,9 @@ const Materials = () => {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="material-box">
-                                <div class="material-box-img">
+                        <div className="col-lg-4 col-md-6">
+                            <div className="material-box">
+                                <div className="material-box-img">
                                     <img src={material3} alt="material wipes" />
                                 </div>
                                 <h5>Rayon cloth</h5>
@@ -83,7 +83,7 @@ const Materials = () => {
                                     industrial, cleaning, and multi-purpose wipes. We also manufacture gentle, affordable
                                     baby wipes using Rayon, balancing softness, safety, and cost-efficiency.
                                 </p>
-                                <a href="#" class="btn btn-primary">See Bamboo Cloth Testing
+                                <a href="#" className="btn btn-primary">See Bamboo Cloth Testing
                                     <span>
                                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
