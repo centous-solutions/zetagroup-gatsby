@@ -220,3 +220,16 @@
     /* Product We Make Css End */
 
 }
+
+@media (min-width: 768px) {
+    .brands-thubnail-wrap li:first-child,
+    .brands-thubnail-wrap li:last-child {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .brands-thubnail-wrap li {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+}
