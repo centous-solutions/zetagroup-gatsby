@@ -9,8 +9,8 @@ import IngredientsAndFormulations from "../components/full-range-wipes/ingredien
 import TailoredFormulations from "../components/full-range-wipes/tailoredformulations";
 import PackagingSoutions from "../components/full-range-wipes/packagingsoutions";
 import DesignAssistance from "../components/full-range-wipes/designassistance";
-import Certified from "../components/full-range-wipes/certified";
-import Form from "../components/full-range-wipes/form";
+import Certified from "../components/certified";
+import Form from "../components/form";
 import EmailContact from "../components/emailcontact";
 
 const FullRangeWipesPage = (props) => {
@@ -30,8 +30,14 @@ const FullRangeWipesPage = (props) => {
             <TailoredFormulations />
             <PackagingSoutions />
             <DesignAssistance />
-            <Certified />
-            <Form />
+            <Certified
+                title='Certified and Tested by Leading Organisations'
+                description='Our raw materials and products are tested or certified by the following organisations'
+            />
+            <Form
+                title='Start your project today!'
+                description='See how we can make a difference to your next project. Simply complete our contact form and one of our team members will get back to you as soon as possible.'
+            />
             <EmailContact />
         </Layout>
     )

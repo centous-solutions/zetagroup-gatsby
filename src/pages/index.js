@@ -32,7 +32,10 @@ const IndexPage = (props) => {
             <ZetaGroupSuccess />
             <Video />
             <GlobalPresence />
-            <Form />
+            <Form
+                title='Partner with us'
+                description='Complete our form below, and one of our team members will get back to you as soon as possible!'
+            />
             <EmailContact />
         </Layout>
     )

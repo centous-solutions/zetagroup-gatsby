@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Form = () => {
+const Form = ({ title, description }) => {
     return (
         <section className="bg-dark-sky form-section-wrap pt-80 pb-80">
             <div className="container">
@@ -8,13 +8,12 @@ const Form = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="form-section-left">
-                                <h2>Partner with us</h2>
+                                <h2>{title}</h2>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="form-section-right">
-                                <p>Complete our form below, and one of our team members will get back to you as soon as
-                                    possible!</p>
+                                <p>{description}</p>
                             </div>
                         </div>
                     </div>
