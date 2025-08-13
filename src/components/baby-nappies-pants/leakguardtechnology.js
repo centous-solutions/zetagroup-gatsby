@@ -1,4 +1,5 @@
 import React from 'react';
+import leakGuard from '../../assets/images/leak-guard.jpg';
 
 const LeakGuardTechnology = () => {
     return (
@@ -9,7 +10,7 @@ const LeakGuardTechnology = () => {
                     <div class="row pt-80">
                         <div class="col-md-6">
                             <div class="leak-technology-left">
-                                <img src="./img/leak-guard.jpg" alt="" />
+                                <img src={leakGuard} alt="" />
                             </div>
                         </div>
                         <div class="col-md-6">

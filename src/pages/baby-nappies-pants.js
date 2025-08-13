@@ -16,7 +16,7 @@ const BabyNappiesPantsPage = (props) => {
     const seoData = props.data?.site?.siteMetadata || {};
 
     return (
-        <Layout>
+        <Layout headerClass="header-main">
             <Seo
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}

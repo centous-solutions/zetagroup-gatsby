@@ -1,13 +1,13 @@
 import React from "react";
 import svgLogo from "../assets/images/zeta-group-logo.svg";
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, headerClass }) => {
     const [searchVisible, setSearchVisible] = React.useState(false);
     const [toggleBtn, setToggleBtn] = React.useState(false);
     const [toggleSubMenu, setToggleSubMenu] = React.useState(null);
 
     return (
-        <header className="header-main white-bg-header">
+        <header className={headerClass}>
             <div className="container">
                 <div className="top-header">
                     <ul>

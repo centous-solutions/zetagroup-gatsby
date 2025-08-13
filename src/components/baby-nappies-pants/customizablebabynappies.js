@@ -1,5 +1,5 @@
 import React from 'react';
-// import customNappies from '../../assets/images/customizable-nappies.png';
+import customNappies from '../../assets/images/customizable-nappies.png';
 
 const CustomizableBabyNappies = () => {
     return (
@@ -14,7 +14,7 @@ const CustomizableBabyNappies = () => {
                     </p>
                 </div>
                 <div class="formula-img">
-                    <img alt="customizable nappies" />{/* src={customNappies} */}
+                    <img src={customNappies} alt="customizable nappies" />
                 </div>
             </div>
         </section>

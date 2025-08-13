@@ -1,5 +1,7 @@
 import React from 'react';
+import topSheet from '../../assets/images/top-sheet.png';
 import absorbantLayer from '../../assets/images/absorbent-layer.jpg';
+import backSheetMaterial from '../../assets/images/back-sheet material.jpg';
 
 const CustomizableBabyNappiesList = () => {
     return (
@@ -9,7 +11,7 @@ const CustomizableBabyNappiesList = () => {
                     <div class="row flex-row-reverse pb-46">
                         <div class="col-md-6">
                             <div class="pro-listing-img">
-                                <img src="./img/top-sheet.png" alt="we-make-wipes" />
+                                <img src={topSheet} alt="we-make-wipes" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -66,7 +68,7 @@ const CustomizableBabyNappiesList = () => {
                     <div class="row flex-row-reverse">
                         <div class="col-md-6">
                             <div class="pro-listing-img">
-                                <img src="./img/back-sheet material.jpg" alt="we-make-wipes" />
+                                <img src={backSheetMaterial} alt="we-make-wipes" />
                             </div>
                         </div>
                         <div class="col-md-6">

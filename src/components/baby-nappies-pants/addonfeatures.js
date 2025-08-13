@@ -1,4 +1,5 @@
 import React from 'react';
+import featureImg from '../../assets/images/features-img.jpg';
 
 const AddOnFeatures = () => {
     return (
@@ -32,7 +33,7 @@ const AddOnFeatures = () => {
                     </div>
                     <div class="col-md-6">
                         <div class="on-features-sec-right">
-                            <img src="./img/features-img.jpg" alt="" />
+                            <img src={featureImg} alt="" />
                         </div>
                     </div>
                 </div>

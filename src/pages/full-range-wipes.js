@@ -17,7 +17,7 @@ const FullRangeWipesPage = (props) => {
     const seoData = props.data?.site?.siteMetadata || {};
 
     return (
-        <Layout>
+        <Layout headerClass="header-main white-bg-header">
             <Seo
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
