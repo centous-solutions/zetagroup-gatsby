@@ -3,13 +3,13 @@ import featureImg from '../../assets/images/features-img.jpg';
 
 const AddOnFeatures = () => {
     return (
-        <section class="pt-80 pb-80 add-on-features-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="on-features-sec-left">
+        <section className="pt-80 pb-80 add-on-features-sec">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="on-features-sec-left">
                             <h2>Add-on Features</h2>
-                            <p class="offer-txt">
+                            <p className="offer-txt">
                                 We offer natural ingredients like manuka honey, essential oils and other enhancements for
                                 skin health.
                             </p>
@@ -19,7 +19,7 @@ const AddOnFeatures = () => {
                                 enhance the performance of the nappies we make. We are constantly pushing the boundaries in
                                 order to give our customers a competitive edge.
                             </p>
-                            <a href="#" class="btn btn-primary">Contact us
+                            <a href="#" className="btn btn-primary">Contact us
                                 <span>
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +31,8 @@ const AddOnFeatures = () => {
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="on-features-sec-right">
+                    <div className="col-md-6">
+                        <div className="on-features-sec-right">
                             <img src={featureImg} alt="" />
                         </div>
                     </div>

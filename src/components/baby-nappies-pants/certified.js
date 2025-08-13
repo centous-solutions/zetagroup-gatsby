@@ -12,9 +12,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Certified = () => {
     return (
-        <section class="pb-80 certified-sec feature-materials">
-            <div class="container">
-                <div class="certified-title pb-80 text-center">
+        <section className="pb-80 certified-sec feature-materials">
+            <div className="container">
+                <div className="certified-title pb-80 text-center">
                     <h4>
                         Our raw materials and products are tested or certified by the following organisations
                     </h4>
