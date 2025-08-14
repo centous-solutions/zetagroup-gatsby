@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import WrappedHeaderBanner from "../components/wrappedheaderbanner";
-import bannerimg from '../assets/images/zeta-group-slider.gif';
+//import bannerimg from '../assets/images/zeta-group-slider.gif';
 import ProductWeMake from "../components/home/productwemake";
 import ManufacturingPartner from "../components/home/manufacturingpartner";
 import TurnkeyProcess from "../components/home/turnkeyprocess";
@@ -24,11 +24,11 @@ const IndexPage = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <WrappedHeaderBanner
+            {/* <WrappedHeaderBanner
                 image={bannerimg}
                 imgalt=""
                 title="We specialize in crafting innovative personal care products with a full-service approach."
-            />
+            /> */}
             <ProductWeMake />
             <ManufacturingPartner />
             <TurnkeyProcess />
