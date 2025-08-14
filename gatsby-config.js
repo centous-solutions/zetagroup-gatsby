@@ -32,7 +32,7 @@ module.exports = {
           placeholder: `blurred`,
           quality: 70,
         },
-        failOnError: false, // prevents build from failing on corrupt images
+        failOn: "error", // prevents build from failing on corrupt images
         stripMetadata: true,
         useMozJpeg: false,
       },
@@ -62,6 +62,5 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-react-helmet`
   ],
 }

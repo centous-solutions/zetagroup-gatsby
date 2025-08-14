@@ -9,43 +9,30 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../assets/css/style.css"
+import "../assets/css/responsive.css"
+import Footer from "./footer"
+// import "bootstrap";
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+const Layout = ({ children, headerClass }) => {
+    const data = useStaticQuery(graphql`
+        query SiteTitleQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
-    }
-  `)
+    `)
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+    return (
+        <>
+            <Header headerClass={headerClass} siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <main>{children}</main>
+            <Footer />
+        </>
+    )
+};
 
-export default Layout
+export default Layout;

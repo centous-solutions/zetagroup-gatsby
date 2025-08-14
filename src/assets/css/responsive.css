@@ -1,0 +1,235 @@
+@media (max-width: 1600px) {
+
+    /* Banner Section Css Start */
+
+    .banner-slide-wrap h1 {
+        max-width: 70%;
+        font-size: 48px;
+    }
+
+    /* Banner Section Css End */
+
+}
+
+@media (max-width: 1440px) {
+
+    /* Common Css Start */
+
+    .container {
+        max-width: 1320px;
+    }
+
+    :root {
+        --heading-h2-size: 40px;
+        --heading-h3-size: 32px;
+        --heading-h4-size: 28px;
+        --listing-li-size: 18px;
+        --para-txt: 18px;
+    }
+
+    /* Common Css End */
+
+}
+
+@media (max-width: 1200px) {
+
+    /* Common Css Start */
+
+    :root {
+        --heading-h2-size: 32px;
+        --heading-h3-size: 28px;
+        --heading-h4-size: 24px;
+        --listing-li-size: 16px;
+        --para-txt: 16px;
+        --btn-font-size: 14px;
+    }
+
+    /* Common Css End */
+
+    /* Banner Section Css Start */
+
+    .banner-slide-wrap h1 {
+        font-size: 38px;
+    }
+
+    /* Banner Section Css End */
+
+    /* Product We Make Css Start */
+
+    .pro-listing-dls p {
+        margin: 0 0 24px;
+    }
+
+    .pro-listing-dls ul {
+        row-gap: 16px;
+        margin: 0 0 20px;
+    }
+
+    /* Product We Make Css End */
+
+}
+
+@media (max-width: 1024px) {
+
+    /* Common Css Start */
+
+    .container {
+        max-width: 960px;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .pt-80 {
+        padding-top: 40px;
+    }
+
+    .pb-46 {
+        padding-bottom: 24px;
+    }
+
+    /* Common Css End */
+}
+
+@media (max-width: 992px) {
+
+    /* Common Css Start */
+
+    :root {
+        --heading-h2-size: 28px;
+        --heading-h3-size: 22px;
+        --heading-h4-size: 24px;
+        --listing-li-size: 16px;
+        --para-txt: 16px;
+        --btn-font-size: 14px;
+    }
+
+    /* Common Css End */
+
+    /* Banner Section Css Start */
+
+    .banner-slide-wrap h1 {
+        font-size: 32px;
+        max-width: 80%;
+    }
+
+    /* Banner Section Css End */
+
+    /* Product We Make Css Start */
+
+    .pro-listing-dls ul li {
+        width: 100%;
+    }
+
+    .product-make-listing {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 0 24px;
+    }
+
+    .pro-listing-dls p,
+    .pro-listing-dls h3 {
+        margin: 0 0 16px;
+    }
+
+    /* Product We Make Css End */
+
+}
+
+@media (max-width: 768px) {
+
+    /* Common Css Start */
+
+    .container {
+        max-width: 720px;
+    }
+
+    /* Common Css End */
+
+}
+
+@media (max-width: 767px) {
+
+    /*  Header Css Start */
+
+    .main-header-right {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-header-center nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        display: none;
+        padding: 16px;
+        gap: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .main-header-center nav.active {
+        display: flex;
+    }
+
+    .has-submenu .submenu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .has-submenu.open .submenu {
+        display: flex;
+    }
+
+    .has-submenu>a::after {
+        /* content: " ▶"; */
+        /* float: right; */
+    }
+
+    .has-submenu.open>a::after {
+        /* content: " ▼"; */
+    }
+
+    .main-header-center nav a {
+        width: 100%;
+    }
+
+    .has-submenu {
+        width: 100%;
+    }
+
+    .white-bg-header .main-header-center nav {
+        background-color: var(--btn-color-primary);
+    }
+
+    /*  Header Css End */
+
+    /* Product We Make Css Start */
+
+    .product-make-listing .row {
+        row-gap: 24px;
+    }
+
+    /* Product We Make Css End */
+
+}
+
+@media (min-width: 768px) {
+    .brands-thubnail-wrap li:first-child,
+    .brands-thubnail-wrap li:last-child {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .brands-thubnail-wrap li {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+}
