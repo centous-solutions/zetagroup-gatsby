@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import BabyNappiesPants from "../components/baby-nappies-pants/babynappiespants";
+import DifferentHeaderBanner from "../components/differentheaderbanner";
+import bannerimg from '../assets/images/baby-napy-pants.jpg';
 import ComprehensiveOptions from "../components/baby-nappies-pants/comprehensiveoptions";
 import CustomizableBabyNappies from "../components/baby-nappies-pants/customizablebabynappies";
 import CustomizableBabyNappiesList from "../components/baby-nappies-pants/customizablebabynappieslist";
@@ -21,7 +22,12 @@ const BabyNappiesPantsPage = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <BabyNappiesPants />
+            <DifferentHeaderBanner
+                image={bannerimg}
+                imgalt="baby napy pants"
+                title="Baby Nappies and Pants"
+                description="From our award winning sustainable plant based nappies to budget friendly options, we have a solution for you. All nappies are free from harsh chemicals and are rigorously tested."
+            />
             <ComprehensiveOptions />
             <CustomizableBabyNappies />
             <CustomizableBabyNappiesList />

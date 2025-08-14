@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import ContractManufacture from '../components/contract-manufacturing/contract-manufacture';
+import DifferentHeaderBanner from '../components/differentheaderbanner';
+import bannerimg from '../assets/images/conract-manufacuring.jpg';
 import StressFreeProject from '../components/contract-manufacturing/stressfreeproject';
 import Quote from '../components/contract-manufacturing/quote';
 import Form from '../components/form';
@@ -18,7 +19,12 @@ const ContractManufacturing = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <ContractManufacture />
+            <DifferentHeaderBanner
+                image={bannerimg}
+                imgalt="adult diaper"
+                title="Contract Manufacturing"
+                description="We specialize in making high quality products on behalf of many brands distributed throughout the world."
+            />
             <StressFreeProject />
             <Quote />
             <YourBenefitsWithUs />

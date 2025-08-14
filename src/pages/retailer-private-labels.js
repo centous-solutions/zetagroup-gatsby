@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import PrivateLabel from '../components/retailer-private-labels/privatelabel';
+import DifferentHeaderBanner from '../components/differentheaderbanner';
+import bannerimg from '../assets/images/private-label.jpg';
 import GrowthStrategy from '../components/retailer-private-labels/growthstrategy';
 import ManufacturingPartner from '../components/retailer-private-labels/manufacturingpartner';
 import ProvenExperience from '../components/retailer-private-labels/provenexperience';
@@ -18,7 +19,12 @@ const RetailerPrivateLabelsPage = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <PrivateLabel />
+            <DifferentHeaderBanner
+                image={bannerimg}
+                imgalt="private lebel"
+                title="PRIVATE LABEL"
+                description="Since 2016 we have serviced over 176 clients at every stage of product development and launch, helping them achieve their commercial goals."
+            />
             <GrowthStrategy />
             <ManufacturingPartner />
             <ProvenExperience />

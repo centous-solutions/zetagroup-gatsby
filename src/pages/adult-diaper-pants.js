@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import AdultDiapersPants from '../components/adult-diaper-pants/adultdiaperspants';
+import DifferentHeaderBanner from '../components/differentheaderbanner';
+import bannerimg from '../assets/images/adult-diaper.jpg';
 import UniqueAdvantages from '../components/adult-diaper-pants/uniqueadvantages';
 import CustomizableItems from '../components/adult-diaper-pants/customizableitems';
 import SizesOffered from '../components/adult-diaper-pants/sizesoffered';
@@ -19,7 +20,12 @@ const AdultDiaperPantsPage = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <AdultDiapersPants />
+            <DifferentHeaderBanner
+                image={bannerimg}
+                imgalt="adult diaper"
+                title="Adult Diapers and Pants"
+                description="Our adult diaper pants are made with high quality materials to ensure maximum comfort and superior absorbency. We offer several tiers of diaper pants at various price options to meet the needs of diverse retail channels."
+            />
             <UniqueAdvantages />
             <CustomizableItems />
             <SizesOffered />
