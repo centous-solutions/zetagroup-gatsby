@@ -228,6 +228,7 @@ li {
 .bg-dark-sky h4,
 .bg-dark-sky h5,
 .bg-dark-sky span,
+.bg-dark-sky a,
 .bg-dark-sky p,
 .bg-dark-sky li,
 .bg-sky-primary h2,
@@ -1018,6 +1019,7 @@ li {
     font-family: var(--font-family-text);
     font-size: var(--para-txt);
     border-color: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
 }
 
 .partner-form-list .form-control:focus {
@@ -1730,4 +1732,170 @@ li {
 
 /* ==================================================================================
    Contract Manufacturing Css End
+=================================================================================== */
+
+
+/* ==================================================================================
+   About Us Css Start
+=================================================================================== */
+
+.history-zeta-sec .pro-listing-dls ul {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+}
+
+.history-zeta-sec .pro-listing-dls ul li {
+    width: 100%;
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    font-size: calc(var(--listing-li-size) + 4px);
+}
+
+.history-zeta-sec .pro-listing-img img {
+    width: auto;
+    max-width: 100%;
+}
+
+.history-zeta-sec .row {
+    align-items: end;
+}
+
+.quote-our-mission {
+    background: url(../images/our-mission-slide.jpg);
+}
+
+.quote-our-mission .quote-content {
+    max-width: 1100px;
+}
+
+.office-map img {
+    width: 100%;
+}
+
+.our-office-dls-left ul li span {
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.our-office-dls-left ul li {
+    font-size: var(--heading-h5-size);
+    padding: 10px;
+}
+
+.our-office-dls-left ul li label {
+    border-bottom: 1px solid rgba(211, 229, 233, 1);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.contact-info-sec .our-office-dls-left ul li label {
+     border-bottom: 1px solid rgba(211, 229, 233, 0.2);
+}
+
+.our-office-dls-left ul li:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.our-office-dls-left ul li a {
+    color: var(--text-color);
+    width: 100%;
+    display: block;
+}
+
+.our-office-dls-left ul li.active a {
+    color: var(--btn-color-primary);
+}
+
+.office-address p {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--font-family-heading);
+}
+
+/* ==================================================================================
+    About Us Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Contact Us Css Start
+=================================================================================== */
+
+.banner-slide-dls .banner-slide-left h1 {
+    margin: 0 0 40px;
+}
+
+.banner-slide-dls .banner-slide-right p {
+    max-width: 695px;
+}
+
+.contact-from .partner-form-list .form-control {
+    color: var(--text-color);
+    border-color: rgba(73, 74, 82, 0.2);
+}
+
+.contact-from .partner-form-list .form-control::placeholder {
+    color: var(--text-color);
+}
+
+.file-upload label {
+    font-size: var(--para-txt);
+    font-weight: 500;
+    font-family: var(--font-family-text);
+}
+
+.contact-info-sec .our-office-dls-left ul li a {
+    color: var(--white-text-color);
+}
+
+.contact-info-dls span {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    display: block;
+}
+
+.right-contact-info .row {
+    row-gap: 20px;
+}
+
+.contact-info-sec .our-office-dls-left ul li.active {
+    background-color: var(--white-text-color);
+    border-radius: 2px;
+}
+
+.contact-info-sec .our-office-dls-left ul li.active span,
+.contact-info-sec .our-office-dls-left ul li.active a {
+    color: var(--text-color);
+}
+
+.contact-info-sec .our-office-dls-left ul li.active label {
+    border-bottom: none;
+}
+
+.our-office-dls-right {
+    border-top: 1px solid rgba(211, 229, 233, 0.2);
+    border-bottom: 1px solid rgba(211, 229, 233, 0.2);
+    height: 100%;
+    padding: 10px;
+}
+
+.contact-info-sec .our-office-dls-left {
+    border-right: 1px solid rgba(211, 229, 233, 0.2);
+    padding: 0 10px;
+}
+
+.contact-info-sec .our-office-dls-left ul li:last-child {
+    padding-bottom: 0;
+}
+
+
+/* ==================================================================================
+    About Us Css End
 =================================================================================== */
