@@ -1,22 +1,22 @@
 import React from 'react';
-import slide1 from '../../assets/images/certificate-slide-1.png';
-import slide2 from '../../assets/images/certificate-slide-2.png';
-import slide3 from '../../assets/images/certificate-slide-3.png';
-import slide4 from '../../assets/images/certificate-slide-4.png';
-import slide5 from '../../assets/images/certificate-slide-5.png';
-import slide6 from '../../assets/images/certificate-slide-6.png';
-import slide7 from '../../assets/images/certificate-slide-7.png';
+import slide1 from '../assets/images/certificate-slide-1.png';
+import slide2 from '../assets/images/certificate-slide-2.png';
+import slide3 from '../assets/images/certificate-slide-3.png';
+import slide4 from '../assets/images/certificate-slide-4.png';
+import slide5 from '../assets/images/certificate-slide-5.png';
+import slide6 from '../assets/images/certificate-slide-6.png';
+import slide7 from '../assets/images/certificate-slide-7.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Certified = () => {
+const Certified = ({ title, description }) => {
     return (
         <section className="pt-80 pb-80 certified-sec">
             <div className="container">
                 <div className="certified-title pb-80 text-center">
-                    <h2 className="pb-46">Certified and Tested by Leading Organisations</h2>
-                    <p>Our raw materials and products are tested or certified by the following organisations</p>
+                    <h2 className="pb-46">{title}</h2>
+                    {description ? <p>{description}</p> : null}
                 </div>
             </div>
             <div className="slider-container">

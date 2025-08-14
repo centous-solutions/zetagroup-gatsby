@@ -1,25 +1,21 @@
 import React from 'react';
-import featureImg from '../../assets/images/features-img.jpg';
+import uniqueBrand from '../../assets/images/unique-brand.png';
 
-const AddOnFeatures = () => {
+const UniqueIdentitySolution = () => {
     return (
         <section className="pt-80 pb-80 add-on-features-sec">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
                         <div className="on-features-sec-left">
-                            <h2>Add-on Features</h2>
-                            <p className="offer-txt">
-                                We offer natural ingredients like manuka honey, essential oils and other enhancements for
-                                skin health.
-                            </p>
+                            <h2>Unique Brand Identity Solutions</h2>
                             <p>
-                                Over the years, serving many different types of customers including premium brands as well
-                                as retailers’ private label programs, we’ve helped develop innovative additional features to
-                                enhance the performance of the nappies we make. We are constantly pushing the boundaries in
-                                order to give our customers a competitive edge.
+                                We offer personalized assistance to customize your brand identity. Our skilled design team
+                                expertly manages the technical aspects of packaging and will collaborate with you to develop
+                                unique patterns, logos (for packaging and front tapes), and packaging designs. This ensures
+                                that your product stands out and meets the specific requirements of your market.
                             </p>
-                            <a href="#" className="btn btn-primary">Contact us
+                            <a href="#" className="btn btn-primary">Start Partnering Now
                                 <span>
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +29,7 @@ const AddOnFeatures = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="on-features-sec-right">
-                            <img src={featureImg} alt="" />
+                            <img src={uniqueBrand} alt="" />
                         </div>
                     </div>
                 </div>
@@ -42,4 +38,4 @@ const AddOnFeatures = () => {
     )
 };
 
-export default AddOnFeatures;
+export default UniqueIdentitySolution;

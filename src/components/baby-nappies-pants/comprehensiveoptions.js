@@ -2,15 +2,15 @@ import React from 'react';
 
 const ComprehensiveOptions = () => {
     return (
-        <section class="comprehensive-options-sec pt-80 pb-80">
-            <div class="container">
-                <div class="banner-dls-wrap text-center">
+        <section className="comprehensive-options-sec pt-80 pb-80">
+            <div className="container">
+                <div className="banner-dls-wrap text-center">
                     <h2>Comprehensive Options</h2>
                     <p>
                         We offer options tailored to your budget and requirements based on the percentage of premium,
                         sustainable, plant based materials used.
                     </p>
-                    <a href="#" class="btn btn-primary">Start your nappies project now
+                    <a href="#" className="btn btn-primary">Start your nappies project now
                         <span>
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -20,12 +20,12 @@ const ComprehensiveOptions = () => {
                         </span>
                     </a>
                 </div>
-                <div class="banner-dls-listing packaging-solution-sec pt-80">
-                    <div class="wipes-formula-listing">
-                        <div class="row">
-                            <div class="col-md-6 wipes-border">
-                                <div class="eco-friendly-spacing">
-                                    <div class="eco-friendly-box">
+                <div className="banner-dls-listing packaging-solution-sec pt-80">
+                    <div className="wipes-formula-listing">
+                        <div className="row">
+                            <div className="col-md-6 wipes-border">
+                                <div className="eco-friendly-spacing">
+                                    <div className="eco-friendly-box">
                                         <h4>Single Sachet</h4>
                                         <p>
                                             Our award winning, most premium and sustainable design made with the highest
@@ -33,13 +33,13 @@ const ComprehensiveOptions = () => {
                                             market. They out perform global market leading brands in absorption capacity and
                                             speed and are certified to be gentle for even the most delicate skin.
                                         </p>
-                                        <span class="comprehensive-percent">85%</span>
+                                        <span className="comprehensive-percent">85%</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 wipes-border">
-                                <div class="eco-friendly-spacing">
-                                    <div class="eco-friendly-box">
+                            <div className="col-md-6 wipes-border">
+                                <div className="eco-friendly-spacing">
+                                    <div className="eco-friendly-box">
                                         <h4>Premium</h4>
                                         <p>
                                             Thoughtfully designed and crafted nappies engineered to provide an elevated
@@ -47,32 +47,32 @@ const ComprehensiveOptions = () => {
                                             percentage of plant-based materials, they provide an accessible, sustainable
                                             offering for your market.
                                         </p>
-                                        <span class="comprehensive-percent">70%</span>
+                                        <span className="comprehensive-percent">70%</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 wipes-border">
-                                <div class="eco-friendly-spacing">
-                                    <div class="eco-friendly-box">
+                            <div className="col-md-6 wipes-border">
+                                <div className="eco-friendly-spacing">
+                                    <div className="eco-friendly-box">
                                         <h4>Mainstream</h4>
                                         <p>
                                             For those customers requiring a more affordable yet good quality offering, we
                                             provide mainstream nappies and nappy pants. Tailored to suit everyday needs, our
                                             smart solutions offer convenience without compromise.
                                         </p>
-                                        <span class="comprehensive-percent">55%</span>
+                                        <span className="comprehensive-percent">55%</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 wipes-border">
-                                <div class="eco-friendly-spacing">
-                                    <div class="eco-friendly-box">
+                            <div className="col-md-6 wipes-border">
+                                <div className="eco-friendly-spacing">
+                                    <div className="eco-friendly-box">
                                         <h4>Price fighter</h4>
                                         <p>
                                             Created to be budget-friendly without sacrificing performance, our products
                                             provide alternative options for savvy shoppers.
                                         </p>
-                                        <span class="comprehensive-percent">40%</span>
+                                        <span className="comprehensive-percent">40%</span>
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,8 @@ import React from "react";
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Banner from "../components/home/banner";
+import WrappedHeaderBanner from "../components/wrappedheaderbanner";
+import bannerimg from '../assets/images/zeta-group-slider.gif';
 import ProductWeMake from "../components/home/productwemake";
 import ManufacturingPartner from "../components/home/manufacturingpartner";
 import TurnkeyProcess from "../components/home/turnkeyprocess";
@@ -18,12 +19,16 @@ const IndexPage = (props) => {
     const seoData = props.data?.site?.siteMetadata || {};
 
     return (
-        <Layout>
+        <Layout headerClass="header-main white-bg-header">
             <Seo
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <Banner />
+            <WrappedHeaderBanner
+                image={bannerimg}
+                imgalt=""
+                title="We specialize in crafting innovative personal care products with a full-service approach."
+            />
             <ProductWeMake />
             <ManufacturingPartner />
             <TurnkeyProcess />
@@ -32,7 +37,10 @@ const IndexPage = (props) => {
             <ZetaGroupSuccess />
             <Video />
             <GlobalPresence />
-            <Form />
+            <Form
+                title='Partner with us'
+                description='Complete our form below, and one of our team members will get back to you as soon as possible!'
+            />
             <EmailContact />
         </Layout>
     )

@@ -9,14 +9,13 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../assets/css/style.css"
 import "../assets/css/responsive.css"
 import Footer from "./footer"
 // import "bootstrap";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, headerClass }) => {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -29,7 +28,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+            <Header headerClass={headerClass} siteTitle={data.site.siteMetadata?.title || `Title`} />
             <main>{children}</main>
             <Footer />
         </>
