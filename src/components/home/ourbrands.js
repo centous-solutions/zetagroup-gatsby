@@ -21,14 +21,15 @@ const OurBrands = ({ brandData }) => {
             );
         },
         dotsClass: "brands-thubnail-wrap",
-        arrows: false
+        arrows: false,
+        fade: true
     };
 
     return (
         <section className="bg-dark-sky our-brands-sec">
             <Slider {...sliderSettings}>
                 {brandData?.imageSlider?.map((slide, idx) => (
-                    <div key={idx}>
+                    <div key={"ourbrand-slide-" + idx}>
                         <div className='row'>
                             <div className="col-lg-4 our-brands-col">
                                 <div className="our-brands-dls">

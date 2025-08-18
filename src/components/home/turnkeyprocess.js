@@ -47,7 +47,7 @@ const TurnkeyProcess = ({ turnkeyProcessData }) => {
                                                     d="M37.5789 8.46444H0V10.6348H38.021L30.5053 18.0141L32.0526 19.5333L42 9.76667L32.0526 0L30.5053 1.51926L37.5789 8.46444Z"
                                                     fill="#444444" />
                                             </svg>
-                                            <span className="box-counter">{step?.stepLink?.title}</span>
+                                            <span className="box-counter">{index + 1}</span>
                                         </a>
                                     </div>
                                 </div>
