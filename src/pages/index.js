@@ -3,8 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import WrappedHeaderBanner from "../components/wrappedheaderbanner";
-import bannerimg from '../assets/images/zeta-group-slider.gif';
-import ProductWeMake from "../components/home/productwemake";
+import ProductWeMake from "../components/productwemake";
 import ManufacturingPartner from "../components/home/manufacturingpartner";
 import TurnkeyProcess from "../components/home/turnkeyprocess";
 import EcoFriendlyCare from "../components/home/ecofriendlycare";
@@ -18,6 +17,17 @@ import EmailContact from "../components/emailcontact";
 const IndexPage = (props) => {
     console.log('props', props)
     const seoData = props.data?.site?.siteMetadata || {};
+    const { allWpPage } = props.data;
+    const homePageData = allWpPage?.edges?.[0]?.node?.acfblocks?.blocks || [];
+    const bannerData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksHeroBannerLayout");
+    const productMakeData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksProductsWeMakeLayout");
+    const manufacturingPartnerData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksYourManufacturingPartnerLayout");
+    const turnkeyProcessData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksOurTurnkeyProcessLayout");
+    const ecoFriendlyCareData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksPioneeringEcoFriendlyPersonalCareLayout");
+    const brandData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksOurBrandsLayout");
+    const zetaGrpSuccessData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksWhatDrivesZetaGroupsSuccessLayout");
+    const videoData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksVideoAndBackgroundImageLayout");
+    const globalPresenceData = homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksGlobalPresenceLayout");
 
     return (
         <Layout headerClass="header-main white-bg-header">
@@ -25,19 +35,39 @@ const IndexPage = (props) => {
                 title={seoData?.title}
                 metaDesc={seoData?.metaDesc}
             />
-            <WrappedHeaderBanner
-                img={bannerimg}
-                imgalt=""
-                title="We specialize in crafting innovative personal care products with a full-service approach."
-            />
-            <ProductWeMake />
-            <ManufacturingPartner />
-            <TurnkeyProcess />
-            <EcoFriendlyCare />
-            <OurBrands />
-            <ZetaGroupSuccess />
-            <Video />
-            <GlobalPresence />
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksHeroBannerLayout") ? (
+                <WrappedHeaderBanner
+                    imgalt={bannerData?.backgroundVideo?.node?.altText || "Zeta Group Banner"}
+                    title={bannerData?.heading || "Welcome to Zeta Group"}
+                    videoLink={bannerData?.backgroundVideoLink}
+                    videoWithUrl={bannerData?.videoWithUrl}
+                    video={bannerData?.backgroundVideo?.node?.sourceUrl}
+                />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksProductsWeMakeLayout") ? (
+                <ProductWeMake productMakeData={productMakeData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksYourManufacturingPartnerLayout") ? (
+                <ManufacturingPartner manufacturingPartnerData={manufacturingPartnerData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksOurTurnkeyProcessLayout") ? (
+                <TurnkeyProcess turnkeyProcessData={turnkeyProcessData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksPioneeringEcoFriendlyPersonalCareLayout") ? (
+                <EcoFriendlyCare ecoFriendlyCareData={ecoFriendlyCareData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksOurBrandsLayout") ? (
+                <OurBrands brandData={brandData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksWhatDrivesZetaGroupsSuccessLayout") ? (
+                <ZetaGroupSuccess zetaGrpSuccessData={zetaGrpSuccessData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksVideoAndBackgroundImageLayout") ? (
+                <Video videoData={videoData} />
+            ) : null}
+            { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksGlobalPresenceLayout") ? (
+                <GlobalPresence globalPresenceData={globalPresenceData} />
+            ) : null}
             <Form
                 title='Partner with us'
                 description='Complete our form below, and one of our team members will get back to you as soon as possible!'
@@ -55,6 +85,7 @@ export const query = graphql`
                 node {
                     acfblocks {
                         blocks {
+                            __typename
                             ... on WpAcfblocksBlocksHeroBannerLayout {
                                 backgroundVideoLink
                                 fieldGroupName
