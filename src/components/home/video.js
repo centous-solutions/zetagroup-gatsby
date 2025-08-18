@@ -1,11 +1,10 @@
 import React from 'react';
-import videoPoster from '../../assets/images/video-poster.png';
 
-const Video = () => {
+const Video = ({ videoData }) => {
     return (
         <section className="video-sec">
             <div className="video-poster-img">
-                <img src={videoPoster} alt="" />
+                <img src={videoData?.backgroundImage?.node?.sourceUrl} alt={videoData?.backgroundImage?.node?.altText} />
                 <div className="video-play-button">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

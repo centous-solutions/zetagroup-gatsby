@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = ({ title, description }) => {
+const Form = ({ bgclass, title, description }) => {
     return (
-        <section className="bg-dark-sky form-section-wrap pt-80 pb-80">
+        <section className={`${bgclass ? bgclass : "bg-dark-sky"} form-section-wrap pt-80 pb-80`}>
             <div className="container">
                 <div className="form-wrap pb-80">
                     <div className="row">

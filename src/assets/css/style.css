@@ -498,6 +498,8 @@ li {
     top: 0;
 }
 
+.video-wrap iframe,
+.video-wrap video,
 .video-wrap img {
     width: 100%;
     height: 100vh;
@@ -552,7 +554,7 @@ li {
     width: 50%;
 }
 
-.pro-listing-img img {
+.product-make-wrap .pro-listing-img img {
     border-radius: 2px;
     width: 100%;
     max-width: 95%;
@@ -1550,6 +1552,12 @@ li {
     margin: 0 0 30px;
 }
 
+.customizable-nappy-listing .leak-technology-right .leak-technology-dls:last-child {
+    /* border-bottom: none; */
+    /* padding-bottom: 0; */
+    /* margin-bottom: 0; */
+}
+
 /* ==================================================================================
    Adult Diapers and Diaper pants End
 =================================================================================== */
@@ -1728,6 +1736,365 @@ li {
     border-right: none;
 }
 
+.factory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.factory-grid img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.factory-grid img:nth-child(1) {
+    grid-row: span 2;
+}
+
+.factory-grid img:nth-child(5) {
+    grid-column: span 2;
+}
+
+.ensuring-quality-box {
+    text-align: center;
+}
+
+.ensuring-quality-box h5 {
+    margin-top: 30px;
+    font-size: calc(var(--heading-h5-size) - 4px);
+}
+
+.ensuring-quality-box img {
+    width: auto;
+    max-width: 100%;
+}
+
+.comprehensive-process-sec .product-make-listing .row {
+    align-items: flex-start;
+}
+
+.comprehensive-process-sec .leak-technology-dls h4 {
+    display: flex;
+    gap: 20px;
+}
+
+.customizable-nappy-listing.comprehensive-process-sec .leak-technology-right .leak-technology-dls {
+    padding: 0 30px 80px;
+}
+
+.customizable-nappy-listing.comprehensive-process-sec .leak-technology-right .leak-technology-dls:last-child {
+    padding-bottom: 0;
+}
+
+.banner-slide-wrap.banner-dls-one h1 {
+    margin: 0 0 60px;
+}
+
+.discover-brands-sec .eco-friendly-box img {
+    max-width: max-content;
+    margin: auto;
+    filter: grayscale(100%);
+}
+
+.discover-brands-sec .eco-friendly-box {
+    padding: 45px 20px;
+}
+
+.discover-brands-sec .eco-friendly-box:hover img {
+    filter: grayscale(0);
+}
+
+.discover-brands-sec .eco-friendly-box:hover {
+    background-color: #EDF1F2;
+}
+
+.discover-brands-sec .contract-project .friendly-listing-wrap:nth-child(2n) {
+    border-right: none;
+}
+
+.discover-brands-sec .zeta-group-number .contract-project .friendly-listing-wrap:nth-child(-n+2) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.discover-brands-sec .zeta-group-number .contract-project .friendly-listing-wrap:nth-child(-n+4) {
+    border-bottom: none;
+}
+
+.terra-dls-listing-left h2 {
+    margin: 0 0 20px;
+}
+
+.terra-dls-listing-right {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    text-align: end;
+}
+
+.terra-dls-site .btn.btn-primary {
+    margin-left: auto;
+    width: 100%;
+    max-width: 340px;
+}
+
+.terra-social-media a {
+    width: 55px;
+    height: 55px;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.terra-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.terra-grp-img img {
+    width: 100%;
+}
+
 /* ==================================================================================
    Contract Manufacturing Css End
+=================================================================================== */
+
+
+/* ==================================================================================
+   About Us Css Start
+=================================================================================== */
+
+.history-zeta-sec .pro-listing-dls ul {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+}
+
+.history-zeta-sec .pro-listing-dls ul li {
+    width: 100%;
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    font-size: calc(var(--listing-li-size) + 4px);
+}
+
+.history-zeta-sec .pro-listing-img img {
+    width: auto;
+    max-width: 100%;
+}
+
+.history-zeta-sec .row {
+    align-items: end;
+}
+
+.quote-our-mission {
+    background: url(../images/our-mission-slide.jpg);
+}
+
+.quote-our-mission .quote-content {
+    max-width: 1100px;
+}
+
+.office-map img {
+    width: 100%;
+}
+
+.our-office-dls-left ul li span {
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.our-office-dls-left ul li {
+    font-size: var(--heading-h5-size);
+    padding: 10px;
+}
+
+.our-office-dls-left ul li label {
+    border-bottom: 1px solid rgba(211, 229, 233, 1);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.contact-info-sec .our-office-dls-left ul li label {
+    border-bottom: 1px solid rgba(211, 229, 233, 0.2);
+}
+
+.our-office-dls-left ul li:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.our-office-dls-left ul li a {
+    color: var(--text-color);
+    width: 100%;
+    display: block;
+}
+
+.our-office-dls-left ul li.active a {
+    color: var(--btn-color-primary);
+}
+
+.office-address p {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--font-family-heading);
+}
+
+/* ==================================================================================
+    About Us Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Contact Us Css Start
+=================================================================================== */
+
+.banner-slide-dls .banner-slide-left h1 {
+    margin: 0 0 40px;
+}
+
+.banner-slide-dls .banner-slide-right p {
+    max-width: 695px;
+}
+
+.contact-from .partner-form-list .form-control {
+    color: var(--text-color);
+    border-color: rgba(73, 74, 82, 0.2);
+}
+
+.contact-from .partner-form-list .form-control::placeholder {
+    color: var(--text-color);
+}
+
+.file-upload label {
+    font-size: var(--para-txt);
+    font-weight: 500;
+    font-family: var(--font-family-text);
+}
+
+.contact-info-sec .our-office-dls-left ul li a {
+    color: var(--white-text-color);
+}
+
+.contact-info-dls span {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 6px;
+    display: block;
+}
+
+.right-contact-info .row {
+    row-gap: 20px;
+}
+
+.contact-info-sec .our-office-dls-left ul li.active {
+    background-color: var(--white-text-color);
+    border-radius: 2px;
+}
+
+.contact-info-sec .our-office-dls-left ul li.active span,
+.contact-info-sec .our-office-dls-left ul li.active a {
+    color: var(--text-color);
+}
+
+.contact-info-sec .our-office-dls-left ul li.active label {
+    border-bottom: none;
+}
+
+.our-office-dls-right {
+    border-top: 1px solid rgba(211, 229, 233, 0.2);
+    border-bottom: 1px solid rgba(211, 229, 233, 0.2);
+    height: 100%;
+    padding: 10px;
+}
+
+.contact-info-sec .our-office-dls-left {
+    border-right: 1px solid rgba(211, 229, 233, 0.2);
+    padding: 0 10px;
+}
+
+.contact-info-sec .our-office-dls-left ul li:last-child {
+    padding-bottom: 0;
+}
+
+/* ==================================================================================
+    Contact Us Css End
+=================================================================================== */
+
+/* ==================================================================================
+    Faq Section Css Start
+=================================================================================== */
+
+.faq-sec-title h1 {
+    font-size: 80px;
+    margin: 0 0 34px;
+}
+
+.faq-dls-wrap .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.faq-dls-wrap .accordion-item:first-of-type>.accordion-header .accordion-button,
+.faq-dls-wrap .accordion-item:first-of-type,
+.faq-dls-wrap .accordion-item:last-of-type>.accordion-collapse,
+.faq-dls-wrap .accordion-item:last-of-type {
+    border-radius: 0;
+}
+
+.faq-dls-wrap .accordion-item {
+    border-left: 0;
+    border-right: 0;
+}
+
+.faq-dls-wrap .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-dls-wrap .accordion-button {
+    font-weight: 800;
+    color: var(--text-color);
+    font-size: var(--heading-h5-size);
+    line-height: 1.5;
+    padding: 16px 0;
+    color: var(--text-color);
+}
+
+.faq-dls-wrap .accordion-item {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.faq-dls-wrap .accordion-body {
+    font-size: var(--para-txt);
+    font-weight: 500;
+    padding: 28px 0 18px;
+    color: var(--text-color);
+}
+
+.faq-dls-wrap .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='8' x2='17' y2='8' stroke='black' stroke-width='2'/%3E%3Cline x1='9' y1='17' x2='9' y2='0' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+    width: 17px;
+    height: 17px;
+    background-size: 100% 100%;
+}
+
+.faq-dls-wrap .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='2' viewBox='0 0 17 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1' x2='17' y2='1' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E");
+    transform: unset;
+}
+
+/* ==================================================================================
+    Faq Section Css End
 =================================================================================== */
