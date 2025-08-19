@@ -15,7 +15,6 @@ import Form from "../components/form";
 import EmailContact from "../components/emailcontact";
 
 const IndexPage = (props) => {
-    console.log('props', props)
     const seoData = props.data?.site?.siteMetadata || {};
     const { allWpPage } = props.data;
     const homePageData = allWpPage?.edges?.[0]?.node?.acfblocks?.blocks || [];
@@ -45,7 +44,7 @@ const IndexPage = (props) => {
                 />
             ) : null}
             { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksProductsWeMakeLayout") ? (
-                <ProductWeMake productMakeData={productMakeData} />
+                <ProductWeMake productMakeData={productMakeData} additionalClass="product-make-wrap bg-sky" />
             ) : null}
             { homePageData?.length > 0 && homePageData?.find((data) => data?.__typename === "WpAcfblocksBlocksYourManufacturingPartnerLayout") ? (
                 <ManufacturingPartner manufacturingPartnerData={manufacturingPartnerData} />

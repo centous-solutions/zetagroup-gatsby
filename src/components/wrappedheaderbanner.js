@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WrappedHeaderBanner = ({ img, imgalt, title, description, videoLink, videoWithUrl, video }) => {
+const WrappedHeaderBanner = ({ img, imgalt, title, description, videoLink, videoWithUrl, video, bgPatch = false }) => {
     return (
         <section className="banner-slide-wrap">
             <div className="video-wrap">
@@ -22,8 +22,13 @@ const WrappedHeaderBanner = ({ img, imgalt, title, description, videoLink, video
                 )}
             </div>
             <div className="container">
-                <div className="banner-slide-wrap">
-                    {description ? (
+                <div className={`banner-slide-wrap${bgPatch ? " banner-slide-bg" : ""}`}>
+                    {bgPatch ? (
+                        <div className="banner-slide-bg-wrap">
+                            <h1>{title}</h1>
+                            <div dangerouslySetInnerHTML={{ __html: description }} />
+                        </div>
+                    ) : description ? (
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="banner-slide-left">

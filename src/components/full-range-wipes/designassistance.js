@@ -1,21 +1,16 @@
 import React from 'react';
-import designAssistant from '../../assets/images/design-assistant.jpg';
 
-const DesignAssistance = () => {
+const DesignAssistance = ({ leftImgRightContent }) => {
     return (
         <section className="bg-sky-primary manu-parter-reverse design-assistance-sec">
             <div className="manu-parter-dls">
                 <div className="manu-parter-dls-img">
-                    <img src={designAssistant} alt="design assistant" />
+                    <img src={leftImgRightContent?.image?.mode?.sourceUrl} alt={leftImgRightContent?.image?.mode?.altText || leftImgRightContent?.image?.mode?.title} />
                 </div>
                 <div className="container">
                     <div className="manu-parter-dls-txt">
-                        <h2>Design assistance for your brand</h2>
-                        <p>
-                            Our experienced design team expertly handles the technical requirements for packaging,
-                            ensuring compliance with stringent specifications. We help to create and approve packaging
-                            designs to align with your brand identity while meeting regulatory standards.
-                        </p>
+                        <h2>{leftImgRightContent?.sectionTitle}</h2>
+                        <div dangerouslySetInnerHTML={{ __html: leftImgRightContent?.description }} />
                     </div>
                 </div>
             </div>

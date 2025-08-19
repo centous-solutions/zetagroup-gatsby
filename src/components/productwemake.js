@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ProductWeMake = ({ productMakeData }) => {
+const ProductWeMake = ({ productMakeData, additionalClass }) => {
     return (
-        <section className="product-make-wrap bg-sky pt-80">
+        <section className={`pt-80 ${additionalClass}`}>
             <div className="container">
                 <div className="product-make-dls pb-46">
                     <div className="row">
@@ -29,7 +29,7 @@ const ProductWeMake = ({ productMakeData }) => {
                             <div className={`col-md-6 ${index % 2 === 0 ? '' : 'order-md-1'}`}>
                                 <div className="pro-listing-dls">
                                     <h3>{product?.productName}</h3>
-                                    <div dangerouslySetInnerHTML={{ __html: productMakeData?.productDescription }} />
+                                    <div dangerouslySetInnerHTML={{ __html: product?.productDescription }} />
                                     {product?.productTypes && (
                                         <ul>
                                             {product?.productTypes?.map((feature, featureIndex) => (
